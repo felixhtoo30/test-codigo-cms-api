@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "c484ccbe-ac24-4863-a0fc-1641d97acc46",
+		"name": "eStore API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get eVoucher List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/vouchers",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"vouchers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get eVoucher Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/vouchers/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"vouchers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment Methods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/pay-methods",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"pay-methods"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
